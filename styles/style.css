@@ -1,1 +1,319 @@
 /* место для вашего кода */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  box-sizing: border-box;
+  width: 1440px;
+  margin: auto;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 92px 49px 92px 51px; 
+  font-size: 18px;
+}
+
+.header_menu-list {
+  display: flex;
+  flex-direction: row;
+  list-style: circle;
+  margin: 44px auto 45px auto;
+}
+
+.header_menu-item_active{
+  list-style: none;
+}
+
+.header_menu-item_seelotsact {
+  margin-left: 33px;
+  text-underline-offset: 4px;
+}
+
+.header_logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+  justify-self: center;
+}
+
+.header_menu-list2 {
+  display: flex;
+  flex-direction: column;
+  text-underline-offset: 4px;
+  font-style: normal;
+  margin: auto 0px auto auto;
+}
+
+.cover {
+  min-height: 757px;
+}
+
+.cover .overlay{
+  position: relative;
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: -2;
+}
+
+.cover .overlay:before,
+.card_1::before,
+.card_2::before,
+.card_3::before {
+  content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+  z-index: -2;
+}
+
+.cover_title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px;
+  color: #FFF;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 30px;
+  gap: 20px
+}
+
+.accent-span{
+  display: block;
+}
+
+.text-left {
+  line-height: 115%;
+}
+
+.text-center {
+  text-align: center;
+  line-height: 100%;
+}
+
+.text-right {
+  text-align: right;
+  line-height: 100%;
+}
+
+.letter-space_60px {
+  letter-spacing: 60px;
+}
+
+.letter-space_0px {
+  letter-spacing: 0;
+}
+
+.cover_description {
+  display: block;
+}
+
+.cover_description-text {
+  display: inline-block;
+  margin: 0px 78px 62px 422px;
+  max-width: 633px;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bet-button {
+  display: inline-block;
+  font-size: 22px;
+  width: 257px;
+  height: 52px;
+  margin: auto;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0);
+}
+
+.lots {
+  padding:180px 50px 0px 50px;
+}
+
+.lots_heading {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-bottom: 27px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.card_1 {
+  position: relative;
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: -2;
+  width: 430px;
+  height: 450px;
+}
+
+.card_2 {
+  position: relative;
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: -2;
+  width: 430px;
+  height: 450px;
+}
+
+.card_3 {
+  position: relative;
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: -2;
+  width: 430px;
+  height: 450px;
+}
+
+.card_title {
+  text-decoration: underline;
+  color: #FFF;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 50px 40px 0;
+}
+
+.card_text {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 120%;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  right: 40px;
+}
+
+.lots_more {
+  display: block;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.about {
+  display: block;
+}
+
+.about_column {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  gap: 25px;
+  padding: 181px 50px 0 50px;
+}
+
+.about_logo {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_logo-image{
+  width: 148px;
+  height: 114px;
+}
+
+.about_card {
+  padding-top: 100px;
+}
+
+.about_title {
+  color: #000;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 75px;
+}
+
+.about_text {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 120%;
+  padding-top: 25px;
+}
+
+.footer{
+  display: flex;
+  gap: 356px;
+  padding: 180px 50px 90px 50px; 
+  font-size: 18px;
+}
+
+.footer_menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-self: center;
+  text-align: center;
+}
+
+.footer_menu-item_active{
+  list-style: none;
+}
+
+.footer_menu-item_seelotsact {
+  text-underline-offset: 4px;
+}
+
+.footer_logo {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  width: 240px;
+  height: 48px;
+  justify-self: center;
+}
+
+.footer_menu-list2 {
+  display: flex;
+  flex-direction: column;
+  text-underline-offset: 4px;
+  font-style: normal;
+  margin: auto 0px auto auto;
+}
