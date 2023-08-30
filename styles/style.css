@@ -22,13 +22,14 @@
   gap: 13px;
 }
 
-.header_menu-item_active{
-  list-style: none;
-}
-
 .header_menu-item_info {
   margin-left: 40px;
   text-underline-offset: 4px;
+}
+
+.header_menu-item_active{
+  list-style: none;
+  margin: 0;
 }
 
 .header_logo {
@@ -43,6 +44,7 @@
   flex-direction: column;
   text-underline-offset: 4px;
   font-style: normal;
+  max-width: 240px;
 }
 
 .header_address {
@@ -56,13 +58,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: 0;
 }
 
-.cover::before,
-.card_type_film::before,
-.card_type_book::before,
-.card_type_picture::before {
+.dark_theme {
   content: '';
 	display: block;
 	width: 100%;
@@ -116,20 +115,22 @@
 }
 
 .cover_description {
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: top;
 }
 
 .cover_description-text {
-  display: inline-block;
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 17px;
   font-weight: 400;
+  padding-top: 12px;
 }
 
 .bet-button {
-  display: inline-block;
   font-size: 22px;
   width: 257px;
   height: 52px;
@@ -262,6 +263,10 @@
   font-weight: 400;
   line-height: 120%;
   padding-top: 25px;
+}
+
+.about_text:first-child {
+  padding-top: 0;
 }
 
 .footer{
