@@ -23,7 +23,7 @@
 }
 
 .header_menu-item_info {
-  margin-left: 40px;
+  margin-left: 20px;
   text-underline-offset: 4px;
 }
 
@@ -34,8 +34,8 @@
 
 .header_logo {
   display: block;
-  width: 148px;
-  height: 105px;
+  width: 134px;
+  height: 95px;
   justify-self: center;
 }
 
@@ -45,6 +45,7 @@
   text-underline-offset: 4px;
   font-style: normal;
   max-width: 240px;
+  gap: 3px;
 }
 
 .header_address {
@@ -70,7 +71,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 10px;
 	background-color:rgba(0, 0, 0, .6);
   z-index: -1;
 }
@@ -79,7 +80,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 165px 50px;
+  padding: 165px 50px 145px;
   color: #FFF;
   font-size: 100px;
   font-weight: 700;
@@ -117,7 +118,8 @@
 .cover_description {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: end;
+  
 }
 
 .cover_description-text {
@@ -127,13 +129,13 @@
   word-spacing: 17px;
   font-weight: 400;
   padding-top: 12px;
+  margin-bottom: 50px;
 }
 
 .bet-button {
   font-size: 22px;
   width: 257px;
   height: 52px;
-  margin-bottom: 50px;
   margin-right: 50px;
   margin-left: 78px;
   color: #fff;
